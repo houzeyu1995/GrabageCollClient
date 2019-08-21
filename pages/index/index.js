@@ -6,8 +6,8 @@ Page({
   data: {
     imgUrls: [
       '/images/pic1.png',
-      '/images/pic2.png',
-      '/images/pic7.png'
+      '/images/pic2.png'
+      // '/images/pic7.png'
     ],
     indicatorDots: false,
     autoplay: false,
