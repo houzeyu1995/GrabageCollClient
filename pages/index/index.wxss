@@ -1,0 +1,16 @@
+/**index.wxss**/
+swiper{
+  width:100%;
+  height:360rpx;
+  /* background-color: pink */
+  position:relative;
+}
+swiper image{
+  display:block;
+  width:80%;
+  height:100%;
+  position:absolute;
+  left:50%;
+  transform: translateX(-50%);
+}
+@import "../../wxSearchView/wxSearchView.wxss";

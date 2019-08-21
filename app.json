@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/find/find",
+    "pages/test/test",
+    "pages/search/search"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小秀才垃圾分类",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "查询",
+      "iconPath": "images/unsearch.png",
+      "selectedIconPath": "images/search.png"
+    },
+    {
+      "pagePath": "pages/find/find",
+      "text": "发现",
+      "iconPath": "images/unfind.png",
+      "selectedIconPath": "images/find.png"
+    },
+    {
+      "pagePath": "pages/test/test",
+      "text": "小测验",
+      "iconPath": "images/untest.png",
+      "selectedIconPath": "images/test.png"
+    }]
+  }
+}
