@@ -10,7 +10,7 @@ Page({
     WxSearch.init(
       that,  // 本页面一个引用
       ['啤酒瓶', '塑料袋', "果皮", "剩饭", '过期药', '宠物粪便','茶叶渣','尘土','卫生巾','一次性餐具'], // 热点搜索推荐，[]表示不使用
-      [],// 搜索匹配，[]表示不使用
+      ['西瓜皮'],// 搜索匹配，[]表示不使用
       that.mySearchFunction, // 提供一个搜索回调函数
       that.myGobackFunction //提供一个返回回调函数
     );
@@ -35,10 +35,14 @@ Page({
   // 返回回调函数
   myGobackFunction: function () {
     // do your job here
-    // 跳转
+    console.log('jump')
     wx.redirectTo({
-      url: '../index/index?searchValue=返回'  
+      url: '../index/index',
     })
+    // 跳转
+    // wx.navigateTo({
+    //   url: '../index/index?searchValue=返回'
+    // })
   }
 
 })

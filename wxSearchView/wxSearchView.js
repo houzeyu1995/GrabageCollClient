@@ -97,12 +97,8 @@ function wxSearchKeyTap(e) {
 
 // 确任或者回车
 function wxSearchConfirm(e) {
-  var key = e.target.dataset.key;
-  if(key=='back'){
-    __goBackFunction();
-  }else{
+  // var key = e.target.dataset.key;
     search(__that.data.wxSearchData.value);
-  }
 }
 
 function search(inputValue) {
