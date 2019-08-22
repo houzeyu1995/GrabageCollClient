@@ -1,0 +1,6 @@
+<!--pages/chuyu/chuyu.wxml-->
+<!-- <text>pages/chuyu/chuyu.wxml</text> -->
+<view class="title">厨余垃圾</view>
+<view class="chuyu">
+  <image src="../../images/pic6.png"></image>
+</view>

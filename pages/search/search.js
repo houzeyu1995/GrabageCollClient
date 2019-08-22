@@ -27,7 +27,7 @@ Page({
   mySearchFunction: function (value) {
     // do your job here
     // 跳转
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../index/index?searchValue='+value
     })
   },
@@ -36,13 +36,12 @@ Page({
   myGobackFunction: function () {
     // do your job here
     console.log('jump')
-    wx.redirectTo({
+    wx.navigateBack({
       url: '../index/index',
     })
     // 跳转
     // wx.navigateTo({
     //   url: '../index/index?searchValue=返回'
     // })
-  }
-
+  },
 })

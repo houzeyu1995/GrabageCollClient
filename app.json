@@ -5,7 +5,11 @@
     "pages/find/find",
     "pages/test/test",
     "pages/search/search",
-    "pages/result/result"
+    "pages/result/result",
+    "pages/qita/qita",
+    "pages/kehuishou/kehuishou",
+    "pages/youhai/youhai",
+    "pages/chuyu/chuyu"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,1 +1,24 @@
 /* pages/test/test.wxss */
+
+/* .mainbody{
+  background-color: gainsboro;
+} */
+.list{
+  width:96%;
+  height:65px;
+  margin:5px 5px 5px 5px;
+  background-color: #fff;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+}
+.picture{
+  width:50px;
+  height:60px;
+  padding:2px 2px 2px 2px;
+  float:left;
+}
+.title{
+  float:left;
+  font-size: 20px;
+  padding:20px 0 0 10px;
+}

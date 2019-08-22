@@ -1,0 +1,6 @@
+<!--pages/kehuishou/kehuishou.wxml-->
+<!-- <text>pages/kehuishou/kehuishou.wxml</text> -->
+<view class="title">可回收垃圾</view>
+<view class="kehuishou">
+  <image src="../../images/pic4.png"></image>
+</view>

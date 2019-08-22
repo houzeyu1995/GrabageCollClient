@@ -1,0 +1,6 @@
+<!--pages/youhai/youhai.wxml-->
+<!-- <text>pages/youhai/youhai.wxml</text> -->
+<view class="title">有害垃圾</view>
+<view class="youhai">
+  <image src="../../images/pic3.png"></image>
+</view>

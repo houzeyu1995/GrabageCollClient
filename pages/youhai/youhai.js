@@ -1,4 +1,4 @@
-// pages/test/test.js
+// pages/youhai/youhai.js
 Page({
 
   /**
@@ -6,27 +6,6 @@ Page({
    */
   data: {
 
-  },
-
-  goToQita: function(){
-    wx.navigateTo({
-      url: '/pages/qita/qita',
-    })
-  },
-  goToKehuishou: function(){
-    wx.navigateTo({
-      url: '/pages/kehuishou/kehuishou',
-    })
-  },
-  goToYouhai: function(){
-    wx.navigateTo({
-      url: '/pages/youhai/youhai',
-    })
-  },
-  goToChuyu: function(){
-    wx.navigateTo({
-      url: '/pages/chuyu/chuyu',
-    })
   },
 
   /**

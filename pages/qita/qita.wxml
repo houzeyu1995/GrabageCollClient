@@ -1,0 +1,6 @@
+<!--pages/qita/qita.wxml-->
+<!-- <text>pages/qita/qita.wxml</text> -->
+<view class="title">其他垃圾</view>
+<view class="qita">
+  <image src="../../images/pic5.png"></image>
+</view>
