@@ -8,4 +8,4 @@
   </block>
 </swiper>
 <include src="../../wxSearchView/wxSearchView.wxml" />
-<!-- <view>{{searchValue}}</view> -->
+<view>{{searchValue}}</view>

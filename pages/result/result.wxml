@@ -1,0 +1,30 @@
+<!--pages/result/result.wxml-->
+<!-- <text>pages/result/result.wxml</text> -->
+<view class="weui-search-bar">
+   <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input" placeholder="请输入查询内容" value="{{wxSearchData.value}}" bindinput="wxSearchInput" bindconfirm="wxSearchConfirm" />
+      <view class="weui-icon-clear" wx:if="{{wxSearchData.value.length > 0}}" bindtap="wxSearchClear">
+        <icon type="clear" size="14"></icon>
+      </view>
+    </view>
+  </view>
+    <view class="weui-search-bar__cancel-btn" bindtap="wxSearchConfirm">
+         <text wx:if="{{wxSearchData.value.length>0}}" data-key='search'>搜索</text>
+         <text wx:else data-key='back'>返回</text>
+     </view>
+</view>
+
+<view class="table">
+  <view class="tr" wx:for="{{result}}">
+    <view class="name">{{item.name}}</view>
+    <view class="type">
+    <!-- todo:不同类型颜色不同 -->
+      <view class="{{item.style}}">
+        {{item.type}}
+      </view>
+    </view>
+    <!-- <view class="type2" v:if="{{item.type == '可回收垃圾'}}">{{item.type}}</view> -->
+  </view>
+</view>

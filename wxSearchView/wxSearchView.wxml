@@ -9,7 +9,7 @@
     </view>
   </view>
     <view class="weui-search-bar__cancel-btn" bindtap="wxSearchConfirm">
-         <text data-key='search'>搜索</text>
+         <text data-key='search'>查询</text>
      </view>
 </view>
 
