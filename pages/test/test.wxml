@@ -1,10 +1,6 @@
 <!--pages/test/test.wxml-->
 <!-- <text>pages/test/test.wxml</text> -->
 <view class="mainbody">
-  <view class="list" bindtap="goToQita">
-    <image class="picture" src="../../images/pic8.png"></image>
-    <view class="title">其他垃圾</view>
-  </view>
   <view class="list" bindtap="goToKehuishou">
     <image class="picture" src="../../images/pic10.png"></image>
     <view class="title">可回收垃圾</view>
@@ -16,6 +12,10 @@
   <view class="list" bindtap="goToChuyu">
     <image class="picture" src="../../images/pic12.png"></image>
     <view class="title">厨余垃圾</view>
+  </view>
+  <view class="list" bindtap="goToQita">
+    <image class="picture" src="../../images/pic8.png"></image>
+    <view class="title">其他垃圾</view>
   </view>
 </view>
 

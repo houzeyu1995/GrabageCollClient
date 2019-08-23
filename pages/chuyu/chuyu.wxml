@@ -1,6 +1,16 @@
 <!--pages/chuyu/chuyu.wxml-->
 <!-- <text>pages/chuyu/chuyu.wxml</text> -->
-<view class="title">厨余垃圾</view>
-<view class="chuyu">
-  <image src="../../images/pic6.png"></image>
+<view class="content">
+  <view class="title">厨余垃圾</view>
+  <view class="chuyu">
+    <image src="../../images/pic6.png"></image>
+  </view>
+  <view class="info">{{info}}</view>
+  <view class="require">投放要求：</view>
+  <view class="require" wx:for="{{require}}">{{item.r}}</view>
+  <view class="blank"></view>
+  <view class="detail" wx:for="{{detail}}" wx:key="index">
+    <view class="detail1" wx:if="{{index%2 == 0}}">{{item.name}}</view>
+    <view class="detail2" wx:if="{{index%2 != 0}}">{{item.name}}</view>
+  </view>
 </view>

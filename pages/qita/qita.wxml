@@ -1,6 +1,16 @@
 <!--pages/qita/qita.wxml-->
 <!-- <text>pages/qita/qita.wxml</text> -->
-<view class="title">其他垃圾</view>
-<view class="qita">
-  <image src="../../images/pic5.png"></image>
+<view class="content">
+  <view class="title">其他垃圾</view>
+  <view class="qita">
+    <image src="../../images/pic5.png"></image>
+  </view>
+  <view class="info">{{info}}</view>
+  <view class="require">投放要求：</view>
+  <view class="require" wx:for="{{require}}">{{item.r}}</view>
+  <view class="blank"></view>
+  <view class="detail" wx:for="{{detail}}" wx:key="index">
+    <view class="detail1" wx:if="{{index%2 == 0}}">{{item.name}}</view>
+    <view class="detail2" wx:if="{{index%2 != 0}}">{{item.name}}</view>
+  </view>
 </view>
