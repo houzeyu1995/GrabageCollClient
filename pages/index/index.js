@@ -2,7 +2,6 @@
 var WxSearch = require('../../wxSearchView/wxSearchView.js');
 //获取应用实例
 const app = getApp()
-
 Page({
   data: {
     imgUrls: [
@@ -14,10 +13,14 @@ Page({
     autoplay: false,
     interval: 5000,
     duration: 1000,
-    searchValue: ''
+    searchValue: '',
+    
   },
+
   // 搜索栏
   onLoad: function () {
+  },
+  showMenu: function () {
     var that = this;
     WxSearch.init(
       that,  // 本页面一个引用
@@ -26,6 +29,9 @@ Page({
       that.mySearchFunction, // 提供一个搜索回调函数
       that.myGobackFunction //提供一个返回回调函数
     );
+  },
+  onShow: function () {
+    this.showMenu();
   },
   // 转发函数,固定部分
   wxSearchInput: WxSearch.wxSearchInput,  // 输入变化时的操作
